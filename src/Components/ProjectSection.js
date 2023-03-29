@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+import { projects } from "../data"
 
 
 export default function ProjectSection() {
@@ -24,7 +24,7 @@ export default function ProjectSection() {
                         <div className="flex relative">
                             <img
                                 alt="gallery"
-                                className="absolute inset-0 w-full h-full object-cover object-center"
+                                className="absolute w-full h-full object-cover object-center"
                                 src={project.image}
                             />
                             <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
