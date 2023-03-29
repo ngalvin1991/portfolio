@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar';
 import ProjectSection from './Components/ProjectSection';
 import Skills from './Components/Skills';
 import Footer from './Components/Footer';
-
+// import SocialFollow from "./SocialFollow"
 
 export default function App () {
   return (

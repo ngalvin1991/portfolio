@@ -8,3 +8,8 @@ export const projects = [
         link: "https://skillmatch-jobs.netlify.app"
     }
 ]
+
+export const skills = [
+   "Javascript", "HTML", "CSS", "React", "Node.js", "API", 
+   "DOM Manipulation", "Responsive Web Design"
+]
