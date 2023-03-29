@@ -1,56 +1,91 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faInstagram,
-    faLinkedin,
-    faGithub
-} from "@fortawesome/free-brands-svg-icons";
 
 
 export default function ContactMe() {
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Get In Touch</h2>
-                <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Insert text about contct .</p>
-                <form action="#" class="space-y-8">
-                    <div className="social-container justify-center">
-                
-                        <a href="https://github.com/ngalvin1991"
-                            className="linkedin social">
-                            <FontAwesomeIcon icon={faGithub} size="2x" className="dark:text-gray-400"/>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/noel-galvin-58b602262/"
-                            className="linkedin social">
-                            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                        </a>
-
-                        <a href="https://www.instagram.com/noelgalvin/?hl=en"
-                            className="instagram social">
-                            <FontAwesomeIcon icon={faInstagram} size="2x" />
-                        </a>
-
-                    </div>
-                    <div>
-                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
-                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your full name" required />
-                    </div>
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your email address" required />
-                    </div>
-                    <div>
-                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="What should we talk about?" required />
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your message goes here"></textarea>
-                    </div>
-                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                </form>
+        
+    <section id="contact" className="relative">
+      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+          <iframe
+            width="100%"
+            height="100%"
+            title="map"
+            className="absolute inset-0"
+            frameBorder={0}
+            marginHeight={0}
+            marginWidth={0}
+            style={{ filter: "opacity(0.7)" }}
+            src="https://www.google.com/maps/embed/v1/place?q=Croydon,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          />
+          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+        
+            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                EMAIL
+              </h2>
+              <a className="text-orange-400 leading-relaxed">
+                noelgalvin1991@gmail.com
+              </a>
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+                PHONE
+              </h2>
+              <p className="leading-relaxed text-orange-400">+447969505611</p>
             </div>
-        </section>
-    )
+          </div>
+        </div>
+        <form
+          netlify
+          name="contact"
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <h2 className="text-black sm:text-4xl text-3xl mb-4 font-medium title-font">
+            Get In Touch!
+          </h2>
+          <p className="leading-relaxed mb-5">
+            Something Something Something
+          </p>
+          <div className="relative mb-4">
+            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="w-full bg-orange-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div className="relative mb-4">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full bg-orange-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div className="relative mb-4">
+            <label
+              htmlFor="message"
+              className="leading-7 text-sm text-gray-400">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              className="w-full bg-orange-300 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <button
+            type="submit"
+            className="text-orange-400 bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  );
 }
+    
