@@ -13,7 +13,7 @@ import { Routes, Route } from "react-router-dom"
 
 function App () {
   return (
-    <div className="App">
+    <div className="App min-h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <Navbar />
       <Routes>
         <Route path="home" element={ <Home/>} />

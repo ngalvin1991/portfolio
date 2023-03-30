@@ -5,7 +5,7 @@ import { projects } from "../data"
 
 export default function ProjectSection() {
     return (
-        <section id="projects" className="text-white bg-gray-900 body-font">
+        <section id="projects" className="text-white body-font">
             <div className="flex flex-col w-full mb-20 text-center mb-20">
                 <CodeIcon className="mx-auto inline-block w-12 mb-3" />
                 <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
