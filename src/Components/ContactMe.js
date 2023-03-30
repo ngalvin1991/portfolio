@@ -1,6 +1,4 @@
 import React from "react";
-
-
 export default function ContactMe() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -22,7 +20,7 @@ export default function ContactMe() {
       body: encode({ "form-name": "contact", name, email, message}),
     })
     .then(() => alert("Your Message Has Been Sent!"))
-    .catch((Error) => alert(error));
+    .catch((error) => alert("Error"));
   }
 
     return (
